@@ -67,6 +67,102 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\960.css" />
+    <Content Include="Content\css\facebox.css" />
+    <Content Include="Content\css\fancy-button\fancy-button.css" />
+    <Content Include="Content\css\gallery.css" />
+    <Content Include="Content\css\grid.css" />
+    <Content Include="Content\css\grumble\grumble.min.css" />
+    <Content Include="Content\css\ie.css" />
+    <Content Include="Content\css\ie6.css" />
+    <Content Include="Content\css\jquery.jqplot.min.css" />
+    <Content Include="Content\css\layout.css" />
+    <Content Include="Content\css\nav.css" />
+    <Content Include="Content\css\prettyPhoto.css" />
+    <Content Include="Content\css\reset.css" />
+    <Content Include="Content\css\table\demo_page.css" />
+    <Content Include="Content\css\table\demo_table.css" />
+    <Content Include="Content\css\table\demo_table_jui.css" />
+    <Content Include="Content\css\tabs.css" />
+    <Content Include="Content\css\text.css" />
+    <Content Include="Content\js\fancy-button\fancy-button.js" />
+    <Content Include="Content\js\jqPlot\excanvas.min.js" />
+    <Content Include="Content\js\jqPlot\jquery.jqplot.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.barRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.BezierCurveRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.blockRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.bubbleRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.canvasAxisLabelRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.canvasAxisTickRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.canvasOverlay.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.canvasTextRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.categoryAxisRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.ciParser.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.cursor.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.dateAxisRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.donutRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.dragable.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.enhancedLegendRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.funnelRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.highlighter.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.json2.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.logAxisRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.mekkoAxisRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.mekkoRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.meterGaugeRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.ohlcRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.pieRenderer.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.pointLabels.min.js" />
+    <Content Include="Content\js\jqPlot\plugins\jqplot.trendline.min.js" />
+    <Content Include="Content\js\jquery-1.6.4.min.js" />
+    <Content Include="Content\js\jquery-ui\external\jquery.bgiframe-2.1.2.js" />
+    <Content Include="Content\js\jquery-ui\external\jquery.cookie.js" />
+    <Content Include="Content\js\jquery-ui\external\jquery.metadata.js" />
+    <Content Include="Content\js\jquery-ui\external\qunit.css" />
+    <Content Include="Content\js\jquery-ui\external\qunit.js" />
+    <Content Include="Content\js\jquery-ui\jquery.effects.blind.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.effects.bounce.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.effects.clip.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.effects.core.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.effects.drop.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.effects.explode.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.effects.fade.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.effects.fold.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.effects.highlight.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.effects.pulsate.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.effects.scale.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.effects.shake.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.effects.slide.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.effects.transfer.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.accordion.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.autocomplete.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.button.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.core.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.datepicker.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.dialog.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.draggable.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.droppable.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.mouse.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.position.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.progressbar.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.resizable.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.selectable.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.slider.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.sortable.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.tabs.min.js" />
+    <Content Include="Content\js\jquery-ui\jquery.ui.widget.min.js" />
+    <Content Include="Content\js\popup\jquery.facebox.js" />
+    <Content Include="Content\js\pretty-photo\jquery.prettyPhoto.js" />
+    <Content Include="Content\js\quick-sand\jquery.quicksand.js" />
+    <Content Include="Content\js\setup.js" />
+    <Content Include="Content\js\table\jquery.dataTables.min.js" />
+    <Content Include="Content\js\tiny-mce\jquery.tinymce.js" />
+    <Content Include="Content\js\tiny-mce\langs\en.js" />
+    <Content Include="Content\js\tiny-mce\license.txt" />
+    <Content Include="Content\js\tiny-mce\tiny_mce.js" />
+    <Content Include="Content\js\tiny-mce\tiny_mce_popup.js" />
+    <Content Include="Content\js\tiny-mce\tiny_mce_src.js" />
+    <Content Include="Content\style.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\jquery-ui.css" />
@@ -83,7 +179,9 @@
     <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -114,6 +212,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\css\themes\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +220,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_SiteLayout.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

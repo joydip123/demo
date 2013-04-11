@@ -42,7 +42,7 @@ textarea
 -----------------------------------------------------------*/
 .field-validation-error
 {
-    color: #ff0000;
+    color: #CC0000;
 }
 
 .field-validation-valid
@@ -52,14 +52,14 @@ textarea
 
 .input-validation-error
 {
-    border: 1px solid #ff0000;
+    border: 1px solid #CC0000;
     background-color: #ffeeee;
 }
 
 .validation-summary-errors
 {
     font-weight: bold;
-    color: #ff0000;
+    color: #CC0000;
 }
 
 .validation-summary-valid
