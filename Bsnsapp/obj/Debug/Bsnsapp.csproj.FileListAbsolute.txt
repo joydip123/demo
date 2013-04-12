@@ -1,0 +1,6 @@
+E:\Bsnsapp\Bsnsapp\bin\Bsnsapp.dll
+E:\Bsnsapp\Bsnsapp\bin\Bsnsapp.pdb
+E:\Bsnsapp\Bsnsapp\bin\EntityFramework.dll
+E:\Bsnsapp\Bsnsapp\obj\Debug\ResolveAssemblyReference.cache
+E:\Bsnsapp\Bsnsapp\obj\Debug\Bsnsapp.dll
+E:\Bsnsapp\Bsnsapp\obj\Debug\Bsnsapp.pdb
