@@ -4,6 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Ninject;
+using Ninject.Modules;
+using Ninject.Activation;
+using Ninject.Web.Mvc;
+using Bsnsapp.Attributes;
+using Bsnsapp.Validators;
+using Raven.Client;
 
 namespace Bsnsapp
 {
