@@ -1,0 +1,63 @@
+﻿@model Bsnsapp.Models.Vendor
+
+@{
+    ViewBag.Title = "VendorDelete";
+    Layout = "~/Views/Shared/_VendorLayout.cshtml";
+}
+
+<h2>VendorDelete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Vendor</legend>
+
+    @*<div class="display-label">EMailUser</div>
+    <div class="display-field">@Model.EMailUser</div>*@
+
+    <div class="display-label">BusinessTitles</div>
+    <div class="display-field">@Model.BusinessTitles</div>
+
+    <div class="display-label">CompanyName</div>
+    <div class="display-field">@Model.CompanyName</div>
+
+    <div class="display-label">Email</div>
+    <div class="display-field">@Model.Email</div>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+
+    <div class="display-label">Address1</div>
+    <div class="display-field">@Model.Address1</div>
+
+    <div class="display-label">Address2</div>
+    <div class="display-field">@Model.Address2</div>
+
+    <div class="display-label">City</div>
+    <div class="display-field">@Model.City</div>
+
+    <div class="display-label">State</div>
+    <div class="display-field">@Model.State</div>
+
+    <div class="display-label">Pin</div>
+    <div class="display-field">@Model.Pin</div>
+
+     <div class="display-label">Longitude</div>
+    <div class="display-field">@Model.Longitude</div>
+
+     <div class="display-label">Latitude</div>
+    <div class="display-field">@Model.Latitude</div>
+
+    <div class="display-label">Country</div>
+    <div class="display-field">@Model.Country</div>
+
+    <div class="display-label">Phone</div>
+    <div class="display-field">@Model.Phone</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Vendor")
+    </p>
+}
+
+

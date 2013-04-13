@@ -1,0 +1,128 @@
+﻿@model Bsnsapp.Models.Mov
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_VendorLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<!--<h3>Are you sure you want to delete this?</h3>-->
+<fieldset>
+    <legend>User Details</legend>
+    <table cellpadding="0" cellspacing="20" style="border:1px solid black; width:75%;">
+    <tr style=" border-bottom:1px solid black;">
+    <td style="padding:5px;">
+   User Id or Email:
+    </td>
+    <td style="padding:5px;">
+    @Model.Email
+    </td>
+    <td style="padding:5px;">
+    Name :
+    </td>
+    <td style="padding:5px;">
+    @Model.Name
+    </td>
+    </tr>
+    <tr style=" border-bottom:1px solid black;">
+    <td style="padding:5px;">
+  Address 1:
+    </td>
+    <td style="padding:5px;">
+    @Model.Address1
+
+    </td>
+    <td style="padding:5px;">
+   Address 2 :
+    </td>
+    <td style="padding:5px;">
+    @Model.Address2
+
+    </td>
+    </tr>
+    <tr style=" border-bottom:1px solid black;">
+    <td style="padding:5px;">
+  City :
+    </td>
+    <td style="padding:5px;">
+    @Model.City
+
+    </td>
+    <td style="padding:5px;">
+   State :
+    </td>
+    <td style="padding:5px;">
+    @Model.State
+    </td>
+    </tr>
+    <tr style=" border-bottom:1px solid black;">
+    <td style="padding:5px;">
+   Postal Zip :
+    </td>
+    <td style="padding:5px;">
+    @Model.Pin
+
+    </td>
+    <td style="padding:5px;">
+    Country :
+    </td>
+    <td style="padding:5px;">
+    @Model.Country
+    </td>
+    </tr>
+    <tr style=" border-bottom:1px solid black;">
+    <td style="padding:5px;">
+  Contact No:
+    </td>
+    <td>
+    @Model.Phone
+    </td>
+    <td style="padding:5px;">
+    Date of Birth:
+    </td>
+    <td style="padding:5px;">
+    @Model.Dob
+    </td>
+    </tr>
+    
+    </table>
+    <!--<div class="display-label">Email</div>
+    <div class="display-field">@Model.Email</div>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+
+    <div class="display-label">Address1</div>
+    <div class="display-field">@Model.Address1</div>
+
+    <div class="display-label">Address2</div>
+    <div class="display-field">@Model.Address2</div>
+
+    <div class="display-label">City</div>
+    <div class="display-field">@Model.City</div>
+
+    <div class="display-label">State</div>
+    <div class="display-field">@Model.State</div>
+
+     <div class="display-label">Pin</div>
+    <div class="display-field">@Model.Pin</div>
+
+     <div class="display-label">Country</div>
+    <div class="display-field">@Model.Country</div>
+
+     <div class="display-label">Phone</div>
+    <div class="display-field">@Model.Phone</div>
+
+     <div class="display-label">Dob</div>
+   
+    <div class="display-field">@Model.Dob</div>  -->
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to Home", "Users")
+    </p>
+}
+
+

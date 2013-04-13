@@ -1,0 +1,22 @@
+﻿@model Bsnsapp.Models.Category
+
+@{
+    ViewBag.Title = "DetailsCat";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Category</legend>
+
+    <div class="display-label">Categories</div>
+    <div class="display-field">@Model.Categories</div>
+     <div class="display-label">Sub Categories</div>
+    <div class="display-field">@Model.Sub_Categories</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "EditCat", new { id=Model.Id }) |
+    @Html.ActionLink("Back to Home", "Users")
+</p>
+

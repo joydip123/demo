@@ -1,0 +1,133 @@
+﻿@model Bsnsapp.Models.Mov
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_VendorLayout.cshtml";
+}
+
+<h2>Edit</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>User Details Updation</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+       <table width="90%" align="center">
+         @Html.HiddenFor(model => model.Email)
+        <tr>
+        <td width="40%" class="editor-label" style="text-align:right">
+         @Html.LabelFor(model => model.Name)
+        </td>
+        <td class="editor-field">
+         @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </td>
+        </tr>
+
+        <tr>
+        <td width="40%" class="editor-label" style="text-align:right">
+         @Html.LabelFor(model => model.Address1)
+        </td>
+        <td class="editor-field">
+         @Html.EditorFor(model => model.Address1)
+            @Html.ValidationMessageFor(model => model.Address1)
+        </td>
+        </tr>
+
+        <tr>
+        <td width="40%" class="editor-label" style="text-align:right">
+         @Html.LabelFor(model => model.Address2)
+        </td>
+        <td class="editor-field">
+         @Html.EditorFor(model => model.Address2)
+            @Html.ValidationMessageFor(model => model.Address2)
+        </td>
+        </tr>
+
+        <tr>
+        <td width="40%" class="editor-label" style="text-align:right">
+         @Html.LabelFor(model => model.City)
+        </td>
+        <td class="editor-field">
+         @Html.EditorFor(model => model.City)
+            @Html.ValidationMessageFor(model => model.City)
+        </td>
+        </tr>
+
+        <tr>
+        <td width="40%" class="editor-label" style="text-align:right">
+         @Html.LabelFor(model => model.State)
+        </td>
+        <td class="editor-field">
+         @Html.EditorFor(model => model.State)
+            @Html.ValidationMessageFor(model => model.State)
+        </td>
+        </tr>
+
+        <tr>
+        <td width="40%" class="editor-label" style="text-align:right">
+         @Html.LabelFor(model => model.Pin)
+        </td>
+        <td class="editor-field">
+         @Html.EditorFor(model => model.Pin)
+            @Html.ValidationMessageFor(model => model.Pin)
+        </td>
+        </tr>
+
+        <tr>
+        <td width="40%" class="editor-label" style="text-align:right">
+         @Html.LabelFor(model => model.Country)
+        </td>
+        <td class="editor-field">
+         @Html.EditorFor(model => model.Country)
+            @Html.ValidationMessageFor(model => model.Country)
+        </td>
+        </tr>
+
+        <tr>
+        <td width="40%" class="editor-label" style="text-align:right">
+         @Html.LabelFor(model => model.Phone)
+        </td>
+        <td class="editor-field">
+         @Html.EditorFor(model => model.Phone)
+            @Html.ValidationMessageFor(model => model.Phone)
+        </td>
+        </tr>
+
+        <tr>
+        <td width="40%" class="editor-label" style="text-align:right">
+         @Html.LabelFor(model => model.Dob)
+        </td>
+        <td class="editor-field">
+         @Html.EditorFor(model => model.Dob)
+            @Html.ValidationMessageFor(model => model.Dob)
+        </td>
+        </tr>
+
+         
+         @Html.HiddenFor(model => model.Password)
+         @Html.HiddenFor(model => model.RetypePassword) 
+           
+        
+        </table>
+        <table width="90%" align="center">
+        <tr>
+        <td style="text-align:center">
+       <input type="submit" value="Save" />
+        </td>
+        </tr>
+        </table>
+
+        
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to Home", "Users")
+</div>
+

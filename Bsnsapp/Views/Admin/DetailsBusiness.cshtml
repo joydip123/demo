@@ -1,0 +1,40 @@
+﻿@model Bsnsapp.Models.Vendor
+
+@{
+    ViewBag.Title = "DetailsBusiness";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>DetailsBusiness</h2>
+
+<fieldset>
+<table cellpadding="0" cellspacing="20" style="border:1px solid black; width:75%; font-size:12px;">
+    <tr style=" border-bottom:1px solid black;">
+    <td style="padding:5px;">BusinessTitles :</td><td style="padding:5px;">@Model.BusinessTitles</td><td style="padding:5px;">CompanyName :</td><td style="padding:5px;">@Model.CompanyName</td>
+    </tr>
+    <tr style=" border-bottom:1px solid black;">
+    <td style="padding:5px;">Category :</td><td style="padding:5px;">@Model.Catgry</td><td style="padding:5px;">Sub Category :</td><td style="padding:5px;">@Model.SubCatgry</td>
+    </tr>
+     <tr style=" border-bottom:1px solid black;">
+     <td style="padding:5px;">Email :</td><td style="padding:5px;">@Model.Email</td><td style="padding:5px;">Name :</td><td style="padding:5px;">@Model.Name</td>
+      </tr>
+    <tr style=" border-bottom:1px solid black;">
+     <td style="padding:5px;">Address1 :</td><td style="padding:5px;">@Model.Address1 </td><td style="padding:5px;">Address2 :</td> <td style="padding:5px;"> @Model.Address2</td>
+     </tr>
+     <tr style=" border-bottom:1px solid black;">
+     <td style="padding:5px;">City :</td><td style="padding:5px;">@Model.City</td><td style="padding:5px;">State :</td><td style="padding:5px;">@Model.State</td>
+     </tr>
+     <tr style=" border-bottom:1px solid black;">
+     <td style="padding:5px;">Pin :</td><td style="padding:5px;">@Model.Pin</td><td style="padding:5px;">Country :</td><td style="padding:5px;">@Model.Country</td>
+     </tr>
+     <tr style=" border-bottom:1px solid black;">
+     <td style="padding:5px;">Phone :</td><td colspan="3">@Model.Phone</td>
+     </tr>
+    </table>   
+    
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "EditBusiness", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Business")
+</p>
+
