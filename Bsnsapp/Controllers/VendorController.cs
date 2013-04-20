@@ -297,7 +297,7 @@ namespace Bsnsapp.Controllers
                 move.Password = Request["pass"];
                 _documentSession.Store(move);
                 _documentSession.SaveChanges();
-                Sendmail(move.Email, move.Name);
+              //  Sendmail(move.Email, move.Name);
 
                 //return View();
                 return RedirectToAction("Users", new { message = string.Format("Created User {0}", move.Email) });
