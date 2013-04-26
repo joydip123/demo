@@ -21,6 +21,8 @@
     <table cellpadding="0" cellspacing="10px" style="width:100%; font-size:12px;" >
         <tr style=" border-bottom:1px solid black; border-top:1px solid black;">
             <th></th>
+<th></th>
+<th></th>
             <th>
                 Email
             </th>
@@ -28,10 +30,10 @@
                 Name
             </th>
             <th>
-                Address1
+                Address Line 1
             </th>
             <th>
-                Address2
+                Address Line 2
             </th>
             <th>
                 City
@@ -57,11 +59,12 @@
     @foreach (var item in Model)
     {
         <tr style=" border-bottom: 1px solid black ">
-            <td style=" color:Green;">
-                @Html.ActionLink("Edit", "EditUser", new { id = item.Id }) |
-                @Html.ActionLink("Details", "DetailsUser", new { id = item.Id }) |
-                @Html.ActionLink("Delete", "DeleteUser", new { id = item.Id }) |
-                @Html.ActionLink("Change Password","ChangePassword", new { id = item.Id }) |
+              <td style=" color: Green; font-weight:bold;">
+                @Html.ActionLink("Edit", "EditUser", new { id = item.Id })</td> 
+                 <td style=" color: Green;font-weight:bold;">
+                @Html.ActionLink("Details", "DetailsUser", new { id = item.Id }) </td>
+                 <td style=" color: Green;font-weight:bold;">
+                @Html.ActionLink("Change Password","ChangePassword", new { id = item.Id }) 
             </td>
             <td>
                 @item.Email
