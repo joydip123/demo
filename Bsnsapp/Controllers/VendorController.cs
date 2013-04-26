@@ -255,20 +255,7 @@ namespace Bsnsapp.Controllers
             //  return View();
         }
 
-        public ActionResult DisallowName(string Email)
-        {
-            var log1 = _documentSession.Query<Mov>()
-               .Where(x => x.Email == Email)
-               .Take(1).ToList();
-
-            if (log1.Count > 0)
-            {
-                return Json(string.Format("{0} is already exist!", Email),
-                     JsonRequestBehavior.AllowGet);
-            }
-            return Json(true, JsonRequestBehavior.AllowGet);
-
-        }
+       
         [HttpPost]
         public ActionResult CreateUser(Mov move)
         {
@@ -331,7 +318,7 @@ namespace Bsnsapp.Controllers
         {
              if (Session["vendor"] != null)
             {
-            if (ModelState.IsValid)
+            
                 _documentSession.Store(move);
             _documentSession.SaveChanges();
             return RedirectToAction("Users", new { message = string.Format("Saved changes to mov {0}", move.Id) });
@@ -388,7 +375,7 @@ namespace Bsnsapp.Controllers
             client.Port = 587;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             client.EnableSsl = true;
-            client.Send(msg);
+           // client.Send(msg);
 
         }
         public static string GetUniqueKey()
@@ -432,6 +419,10 @@ namespace Bsnsapp.Controllers
         public ActionResult ChangePassword(Mov move, int id)
         {
 
+            if (Request["Name_1"] != Request["Name_2"])
+            {
+                return View(move);
+            } 
             // var log2 = _documentSession.Load<ChangePassword>(chng.UserId);
             var log1 = _documentSession.Query<Mov>()
                 .Where(x => x.Email == move.Email && x.Password == Request["Name_0"])
@@ -442,11 +433,11 @@ namespace Bsnsapp.Controllers
                 if (!ModelState.IsValid)
 
                     move.Password = "";
-                move.Id = 0;
+                //move.Id = 0;
                 move.Password = Request["Name_1"];
                 move.RetypePassword = Request["Name_2"];
 
-                _documentSession.Delete(_documentSession.Load<Mov>(id));
+                _documentSession.Delete(_documentSession.Load<Mov>(move.Id));
                 _documentSession.SaveChanges();
                 _documentSession.Store(move);
                 _documentSession.SaveChanges();
@@ -567,7 +558,7 @@ namespace Bsnsapp.Controllers
             client.Port = 587;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             client.EnableSsl = true;
-            client.Send(msg);
+           // client.Send(msg);
 
         }
         public static string HashResetParams(string Email)
