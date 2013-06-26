@@ -62,7 +62,7 @@ public string Dob { get; set; }
 [DataType(DataType.Password)]
 public string Password { get; set; }
 
-[Required]
+//[Required]
 [DisplayName("Retype New Password")]
 [DataType(DataType.Password)]
 [SameAs("Password",ErrorMessage="Both Password Should Match")]
@@ -97,9 +97,4 @@ public string Categories { get; set; }
 [DisplayName("Sub Category Name")]
 public string Sub_Categories { get; set; }
 }
-
-
-
-
 }
-
