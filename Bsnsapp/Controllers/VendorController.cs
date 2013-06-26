@@ -260,41 +260,48 @@ namespace Bsnsapp.Controllers
         public ActionResult CreateUser(Mov move)
         {
                
-            //if (!ModelState.IsValid)
-            var log1 = _documentSession.Query<Mov>()
-              .Where(x => x.Email == move.Email)
-              .Take(1).ToList();
+            if (move.Email != null)
+{
+var log1 = _documentSession.Query<Mov>()
+.Where(x => x.Email == move.Email)
+.Take(1).ToList();
 
-            if (log1.Count > 0)
-            {
-                return Json(string.Format("{0} is already exist!", move.Email),
-                     JsonRequestBehavior.AllowGet);
-            } 
-            
+if (log1.Count > 0)
+{
+return Json(string.Format("{0} is already exist!", move.Email),
+JsonRequestBehavior.AllowGet);
+}
+}
+if (move.Country == "0")
+{
+return Json(string.Format("Please select a country!", move.Country),
+JsonRequestBehavior.AllowGet);
+}
 
-            if (move.Email != null && move.Name != null && Request["pass"] == move.RetypePassword)
-            {
-                move.Country = "";
-                List<State1> objCountry = new List<State1>();
-                objCountry = GetAllState1().Where(m => m.Id.ToString() == Request.Form["Country"]).ToList();
-                var objCoun = objCountry[0].StateName;
-                move.Country = objCoun;
-                //-----------------------------------------------------------------
-                Session["vendor"] = move.Email;
-                move.Password = Request["pass"];
-                _documentSession.Store(move);
-                _documentSession.SaveChanges();
-              //  Sendmail(move.Email, move.Name);
+if (move.Email != null && move.Name != null && Request["pass"] == move.RetypePassword)
+{
+move.Country = "";
+List<State1> objCountry = new List<State1>();
+objCountry = GetAllState1().Where(m => m.Id.ToString() == Request.Form["Country"]).ToList();
+var objCoun = objCountry[0].StateName;
+move.Country = objCoun;
+//-----------------------------------------------------------------
+Session["vendor"] = move.Email;
+move.Password = Request["pass"];
+_documentSession.Store(move);
+_documentSession.SaveChanges();
+// Sendmail(move.Email, move.Name);
 
-                //return View();
-                return RedirectToAction("Users", new { message = string.Format("Created User {0}", move.Email) });
-            }
-            else
-            {
-                move.StateModel = new List<State>();
-                move.StateModel = GetAllState();
-                return View(move);
-            }
+//return View();
+return RedirectToAction("Users", new { message = string.Format("Created User {0}", move.Email) });
+}
+else
+{
+move.StateModel = new List<State>();
+move.StateModel = GetAllState();
+return View(move);
+}
+
         }
 
         public ActionResult EditUser(int id)
