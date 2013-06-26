@@ -9,7 +9,6 @@ using Bsnsapp.Models;
 using Bsnsapp.Attributes;
 using Newtonsoft.Json;
 
-
 namespace Bsnsapp.Models
 {
 public class Mov
