@@ -15,7 +15,6 @@ using System.Globalization;
 using System.Web.UI;
 
 
-
 namespace Bsnsapp.Controllers
 {
     public class VendorController : Controller
